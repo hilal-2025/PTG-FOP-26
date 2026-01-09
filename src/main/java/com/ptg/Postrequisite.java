@@ -14,6 +14,7 @@ public class Postrequisite extends Course{
     @Override
     void courseInfo(){
         super.courseInfo();
+        System.out.println("Prerequisite: "+prerequisite);
     }
 
     boolean checkFinished(Student student, Postrequisite postrequisite) {
@@ -25,3 +26,4 @@ public class Postrequisite extends Course{
         return false;
     }
 }
+
